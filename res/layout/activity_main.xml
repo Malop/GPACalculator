@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dip"
+            android:gravity="center"
+            android:text="学生信息"
+            android:textColor="@color/black"
+            android:textSize="40.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/user_login_rlyt_account"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:text="学期学年"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <Spinner
+                android:id="@+id/spinner_term"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100.0dip"
+                android:background="@drawable/shape"
+                android:singleLine="true"
+                android:textSize="18.0sp" />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/user_login_rlyt_account"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:text="学        号"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/userid"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100.0dip"
+                android:background="@drawable/shape"
+                android:hint=" 请输入你的学号"
+                android:singleLine="true"
+                android:textSize="18.0sp" >
+            </AutoCompleteTextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:text="原创密码"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100.0dip"
+                android:background="@drawable/shape"
+                android:hint=" 请输入你的原创密码"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="260.0dip"
+            android:layout_height="44.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30.0dip"
+            android:background="@drawable/qq_btn_normal"
+            android:shadowDx="0.0"
+            android:shadowDy="-1.0"
+            android:shadowRadius="1.0"
+            android:text="计算"
+            android:textColor="@color/black"
+            android:textSize="18.0sp"
+            android:textStyle="normal" />
+        
+        <CheckBox
+            android:id="@+id/savePasswordCB"
+            android:layout_width="wrap_content"
+            android:layout_height="48.0dip"
+            android:layout_gravity="center_horizontal"
+            android:text="记住密码    "
+            android:textColor="@color/black"
+            android:textSize="18.0sp" >
+        </CheckBox>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/close"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" />
+
+</RelativeLayout>
